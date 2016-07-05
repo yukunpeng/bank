@@ -47,12 +47,7 @@
 			//做题项选中
 			FoldMenu.getIns().unSelectedAll();
 			practiceTf.selected(true);
-			//若该题还没做过，改变其状态为正在做题
-			var mainNav:MainNav=PlayerPanel.practiceTf.parent.parent as MainNav;
-			if(mainNav.getState()==1){
-				quesState=2;
-				updateListState(stateArr);
-			}
+			updateListState(stateArr);
 			//暂停视频
 			this["player"].stop();
 			//视频到预定位置
