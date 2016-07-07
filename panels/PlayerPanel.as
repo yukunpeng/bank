@@ -99,6 +99,7 @@
 		}
 		
 		public function PlayerPanel() {
+			this["player"].getVideoPlayer(this["player"].activeVideoPlayerIndex).smoothing = true;
 			LoadManager.getIns().loadJson("asset/videolist.json",videoListCom);
 		}
 		
